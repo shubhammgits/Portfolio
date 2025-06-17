@@ -93,6 +93,7 @@ header ul a{
 }
 
 .blackhole-box{
+    z-index: -1;
     position: absolute;
     top: 0;
     width: 100%;
@@ -184,7 +185,7 @@ header ul a{
 
 .hero-vid-box video{
     height: 900px;
-    mix-blend-mode: difference;
+    mix-blend-mode: lighten;
 }
 
 .scroll-down{
@@ -269,6 +270,7 @@ header ul a{
     border: 1px solid gray;
     background-color: #080020b7;
     border-radius: 20px;
+    transform: 0.3s;
 }
 
 .card img{
@@ -319,6 +321,43 @@ header ul a{
     bottom: 5%;
     left: 5%;
 }
+
+.card button:hover{
+    box-shadow: 0 0 15px #727fde86;
+    opacity: 0.7;
+}
+
+.card:hover{
+    box-shadow: 0 0 15px rgba(211, 211, 211, 0.5);
+}
+
+.card:nth-child(3){
+    grid-row: span 2;
+    height: 83vh;
+}
+
+.card:nth-child(3) p{
+    bottom: 12%;
+}
+
+.card:nth-child(3) h1{
+    bottom: 21%;
+}
+
+.card:nth-child(4){
+    grid-column: span 2;
+}
+
+.card:nth-child(4) p{
+    max-width: 650px;
+}
+
+.card:nth-child(4) h1{
+    bottom: 35%;
+}
+
+
+
 
 
 
