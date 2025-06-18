@@ -8,12 +8,10 @@ const videoList = [video1, video2, video3]
 videoList.forEach(function(video){
     video.addEventListener('mouseover' , function(){
         video.play()
-        hoverSign.classList.add("active")
     })
 
     video.addEventListener('mouseout' , function(){
         video.pause()
-        hoverSign.classList.remove("active")
         video.currentTime = 0; 
     })
 })
