@@ -650,6 +650,44 @@ footer h1{
 }
 
 
+/* Blur effect animation*/
+
+.autoBlur{
+    animation: autoBlurAnimation linear both;
+    animation-timeline: view();
+}
+
+@keyframes autoBlurAnimation{
+    0%{
+        filter: blur(40px);
+        opacity: 0;
+    }
+
+    35%, 65%{
+        filter: blur(0);
+        opacity: 1;
+    }
+
+    100%{
+        filter: blur(40px);
+        opacity:0;
+    }
+}
+
+
+.autoDisplay{
+    animation: autoDisplayAnimation both;
+    animation-timeline: view();
+}
+
+
+
+
+
+
+
+
+
 @media (max-aspect-ratio: 16/9) {
     .back-vid{
         width: auto;
